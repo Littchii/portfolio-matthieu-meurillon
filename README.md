@@ -4,7 +4,7 @@ Dêpot du code source de mon portfolio. Créer avec [create-react-app](https://g
 
 ## Améliorations et bugs
 
-Vous pouvez m'aider à corriger des bugs ou des problèmes rencontrés sur le site dans la rubrique "Issues" juste [ici](https://github.com/Littchii/portfolio-matthieu-meurillon/issues). Vous pouvez aussi dans cette rubrique me faire des suggestions pour améliorer le site ou implémenter de nouvelles fonctionnalités.
+Vous pouvez m'aider à corriger des bugs ou des problèmes rencontrés sur le site dans la rubrique "Issues" juste [ici](https://github.com/Littchii/portfolio-matthieu-meurillon/issues). Vous pouvez également me faire des suggestions pour améliorer le site ou implémenter de nouvelles fonctionnalités.
 
 ## Open Source
 
