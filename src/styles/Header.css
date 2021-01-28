@@ -11,8 +11,16 @@
 }
 
 .title {
+    font-size: 35px;
     color: var(--color-primary-text);
     font-family: "Dancing Script";
+}
+
+.gh {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
     margin-bottom: 15px;
 }
 

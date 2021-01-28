@@ -13,6 +13,7 @@ const Header = ({ showModal }) => {
     return (
         <header className="header">
             <h1 className="title">Matthieu Meurillon</h1>
+            <a href="https://github.com/Littchii" title="mon github" className="link gh" target="_blank" rel="noreferrer">-Mon GitHub-</a>
             {authToken ? 
                 <button className="button" onClick={() => history.push('/admin')}>Admin</button> 
             : 
