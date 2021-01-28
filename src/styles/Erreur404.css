@@ -1,0 +1,39 @@
+.erreurPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.block404 {
+    background: linear-gradient(to bottom, var(--color-secondary-background) 50%, var(--color-primary-background) 50%);
+    padding: 30px;
+    border: solid 1px var(--color-primary-border);
+}
+
+.title404 {
+    font-size: 45px;
+}
+
+.text404 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.title404, .text404 {
+    color: var(--color-primary-text);
+}
+
+@media screen and (max-width: 300px) {
+    .block404 {
+        width: 97%;
+        text-align: center;
+    }
+    .title404 {
+        font-size: 35px;
+    }
+    .text404 {
+        font-size: 20px;
+    }
+}

@@ -38,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 .App {
     background: linear-gradient(to bottom, var(--color-primary-background) 50%, var(--color-secondary-background) 50%);
     padding: 0 5%;
-    padding-bottom: 15px;
 }
 
 ::-webkit-scrollbar {

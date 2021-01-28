@@ -6,6 +6,7 @@ import Presentation from './components/Presentation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Timeline from './components/Timeline';
+import Erreur404 from './components/Erreur404';
 import { useSelector } from 'react-redux';
 import ConnexionModal from './components/ConnexionModal';
 import {
@@ -36,27 +37,25 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-              <Header showModal={showModal} />
-              <div className="top">
-                <div className="leftPart">
-                  <Presentation />
-                  <Skills />
-                </div>
-                <Timeline />
+            <Header showModal={showModal} />
+            <div className="top">
+              <div className="leftPart">
+                <Presentation />
+                <Skills />
               </div>
-              <Projects />
-              <Footer />
+              <Timeline />
+            </div>
+            <Projects />
+            <Footer />
             <ConnexionModal showModal={openModal} hideModal={hideModal} />
           </Route>
-          <Route exact path="/admin">
+          {/* <Route exact path="/admin">
             <div>
               PAGE ADMIN
             </div>
-          </Route>
+          </Route> */}
           <Route path="*">
-            <div>
-              SEXE
-            </div>
+            <Erreur404 />
           </Route>
         </Switch>
       </Router>

@@ -3,6 +3,7 @@
     text-align: center;
     border-top: solid 2px var(--color-primary-border);
     padding-top: 7px;
+    padding-bottom: 20px;
 }
 
 .texteFooter {
