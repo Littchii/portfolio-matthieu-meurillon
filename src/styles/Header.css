@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.header {
+    text-align: center;
+    width: 70%;
+    text-align: center;
+    padding: 15px 0;
+    margin: auto;
+    border-bottom: solid 2px var(--color-primary-border);
+    margin-bottom: 40px;
+}
+
+.title {
+    color: var(--color-primary-text);
+    font-family: "Dancing Script";
+    margin-bottom: 15px;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    border: none;
+    border: solid 1px var(--color-primary-border);
+    background-color: var(--color-secondary-background);
+    color: var(--color-primary-text);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 25px;
+    }
+}
+
+.switcher {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    height: 27px;
+    width: 50px;
+    background-color: var(--color-tertiary-background);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid var(--color-primary-text);
+}
+
+.toggle::after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: var(--color-primary-text);
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s ease;
+}
+
+input:checked + .toggle {
+    background-color: var(--color-tertiary-background);
+    border: 2px solid var(--color-primary-text);
+}
+
+input:checked + .toggle::after {
+    background-color: var(--color-primary-text);
+    left: calc(100% - 22px);
+}

@@ -1,0 +1,102 @@
+[data-color-mode="light"] {
+    --color-primary-background: #c1d1d6;
+    --color-secondary-background: #d4dfe2;
+    --color-tertiary-background: #fff9f1;
+    --colo-primary-shadow: rgb(136, 131, 130);
+    --color-primary-text: #111;
+    --color-secondary-text: #222;
+    --color-primary-link: blue;
+    --color-primary-border: #999;
+    --color-secondary-border: #777;
+}
+
+[data-color-mode="dark"] {
+    --color-primary-background: #13163b;
+    --color-secondary-background: #1e2155;
+    --color-tertiary-background: #0c0f2e;
+    --colo-primary-shadow: #7175be;
+    --color-primary-text: #eee;
+    --color-secondary-text: #ddd;
+    --color-primary-link: cyan;
+    --color-primary-border: #bbb;
+    --color-secondary-border: #aaa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.App {
+    background: linear-gradient(to bottom, var(--color-primary-background) 50%, var(--color-secondary-background) 50%);
+    padding: 0 5%;
+    padding-bottom: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #999;
+    padding: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #343997;
+}
+
+.block {
+    background-color:var(--color-tertiary-background);
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px var(--color-secondary-border);
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px var(--colo-primary-shadow);
+}
+
+.top {
+    display: flex;
+}
+
+.leftPart {
+    width: 40%;
+}
+
+.head {
+    color: var(--color-primary-text);
+}
+
+.desc {
+    color: var(--color-secondary-text);
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 340px) {
+    .App {
+        padding: 0px 7px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .top{
+        display: block;
+    }
+    .leftPart {
+        width: auto;
+    }
+}

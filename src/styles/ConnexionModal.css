@@ -1,0 +1,137 @@
+.modalBg {
+    color: var(--color-secondary-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(105,105,105, 0.6);
+}
+
+.modalContainer {
+    text-align: center;
+    width: 30%;
+    background: linear-gradient(to left, var(--color-primary-background) 50%, var(--color-secondary-background) 50%);
+    padding: 0px 10px;
+    padding-top: 20px;
+    border: solid 1px  var(--color-primary-text);
+    border-radius: 10px;
+}
+
+.modalTitle {
+    font-size: 35px;
+}
+
+.errorMsg {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 25px;
+    background: rgba(0, 0, 0, 0.8);
+    color: red;
+}
+
+.formGroup {
+    vertical-align: baseline;
+    margin: 25px 0;
+}
+
+.info {
+    font-weight: bold;
+}
+
+.field {
+    color: var(--color-secondary-text);
+    background-color: var(--color-primary-background);
+    width: 65%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+    display: block;
+    font-size: 19px;
+    border: solid 1px var(--color-secondary-text);
+}
+
+.submit {
+    display: none;
+}
+
+.submitButton {
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 7px;
+    background: #076BDC;
+    cursor: pointer;
+    color: #eee;
+}
+
+.msgInfo {
+    width: 70%;
+    font-size: 12px;
+    margin: 10px auto;
+    font-style: italic;
+    padding: 0;
+}
+
+.close{
+    margin: 0px -10px 0px -10px;
+}
+
+.closeButton {
+    cursor: pointer;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 40px;
+    border: none;
+    background-color: #cf5915;
+    color: #eee;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.closeButton:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1400px) {
+    .modalContainer {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .modalContainer {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .modalContainer {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .modalContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .field {
+        width: 90%;
+    }
+    .modalContainer {
+        width: 95%;
+    }
+}
