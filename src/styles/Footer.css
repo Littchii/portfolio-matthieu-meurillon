@@ -10,3 +10,7 @@
     font-size: 15px;
     color: var(--color-secondary-text);
 }
+
+.icons:hover {
+    opacity: 0.8;
+}
