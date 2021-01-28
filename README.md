@@ -1,6 +1,7 @@
-## Mon portfolio officiel
+# Mon portfolio officiel
 
-Dêpot du code source de mon portfolio. Créer avec [create-react-app](https://github.com/facebook/create-react-app).
+Dêpot du code source de mon portfolio (frontend).<br/>
+Créer de A à Z avec [create-react-app](https://github.com/facebook/create-react-app).
 
 ## Améliorations et bugs
 
