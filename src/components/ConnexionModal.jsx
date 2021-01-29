@@ -2,11 +2,11 @@ import '../styles/ConnexionModal.css';
 import { userLogin } from '../redux/userActions';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const ConnexionModal = ({ showModal, hideModal }) => {
 
-    // const history = useHistory();
+    const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const message = useSelector(state => state.userReducer.message);
@@ -22,7 +22,7 @@ const ConnexionModal = ({ showModal, hideModal }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(userLogin(email, password));
+        dispatch(userLogin(email, password, history));
     }
 
     return (

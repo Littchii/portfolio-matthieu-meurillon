@@ -7,8 +7,9 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Timeline from './components/Timeline';
 import Erreur404 from './components/Erreur404';
-import { useSelector } from 'react-redux';
 import ConnexionModal from './components/ConnexionModal';
+import Admin from './components/Admin';
+import { useSelector } from 'react-redux';
 import {
   BrowserRouter as Router,
   Switch,
@@ -49,11 +50,9 @@ function App() {
             <Footer />
             <ConnexionModal showModal={openModal} hideModal={hideModal} />
           </Route>
-          {/* <Route exact path="/admin">
-            <div>
-              PAGE ADMIN
-            </div>
-          </Route> */}
+          <Route exact path="/admin">
+            <Admin />
+          </Route>
           <Route path="*">
             <Erreur404 />
           </Route>
