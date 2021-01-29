@@ -10,6 +10,6 @@ Veuillez simplement être le plus précis et compréhensible possible pour facil
 
 ## Open Source
 
-Le code est ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)**entièrement** Open Source, vous pouvez le réutiliser comme bon vous semble. 
+Le code est ![#f03c15]**entièrement** Open Source, vous pouvez le réutiliser comme bon vous semble. 
 <br/>Je n'ai pas vraiment réalisé une structure compliquée, 
 j'ai simplement implémenté redux et react-redux qui me permettent de gérer l'état global de l'application notamment pour le thème.
