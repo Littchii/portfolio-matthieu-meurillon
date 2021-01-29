@@ -6,8 +6,7 @@ Créer de A à Z avec [create-react-app](https://github.com/facebook/create-reac
 ## Améliorations et bugs
 
 Vous pouvez m'aider à trouver des bugs ou des problèmes rencontrés sur le site dans la rubrique "Issues" juste [ici](https://github.com/Littchii/portfolio-matthieu-meurillon/issues) (surtout des problèmes de Responsive sur les différents navigateurs). Vous pouvez également me faire des suggestions pour améliorer le site ou implémenter de nouvelles fonctionnalités.
-<br/><br/>
-
+<br/><br/> 
 *Veuillez simplement être le plus précis et compréhensible possible pour faciliter la lecture de vos remarques.*
 
 ## Open Source
