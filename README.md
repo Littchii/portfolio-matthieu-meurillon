@@ -10,6 +10,6 @@ Veuillez simplement être le plus précis et compréhensible possible pour facil
 
 ## Open Source
 
-Le code est <b style="color: orange">entièrement</b> Open Source, vous pouvez le réutiliser comme bon vous semble. 
+Le code est <span style="color: orange">**entièrement**</span> Open Source, vous pouvez le réutiliser comme bon vous semble. 
 <br/>Je n'ai pas vraiment réalisé une structure compliquée, 
 j'ai simplement implémenté redux et react-redux qui me permettent de gérer l'état global de l'application notamment pour le thème.
