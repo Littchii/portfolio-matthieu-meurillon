@@ -1,7 +1,7 @@
 export const LOGIN = "LOGIN";
 export const ERROR = "ERROR";
 
-export const userLogin = (email, password, history) => {
+export const userLogin = (email, password) => {
 
     return async dispatch => {
         
@@ -21,7 +21,7 @@ export const userLogin = (email, password, history) => {
             if(! res.error) {
                 localStorage.setItem('auth', res.token);
                 dispatch({ type: LOGIN, user: res.user, token: res.token });
-                history.push('/admin');
+                // history.push('/admin');
             } else {
                 dispatch({ type: ERROR, message: res.error });
             }
