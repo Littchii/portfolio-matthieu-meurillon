@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -9,6 +9,7 @@ import Timeline from './components/Timeline';
 import Erreur404 from './components/Erreur404';
 import ConnexionModal from './components/ConnexionModal';
 import Admin from './components/Admin';
+import Loading from './components/Loading';
 import { useSelector } from 'react-redux';
 import {
   BrowserRouter as Router,
@@ -20,6 +21,14 @@ import {
 function App() {
 
   const [openModal, setOpenModal] = useState(false);
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  });
 
   const showModal = () => {
       setOpenModal(true);
@@ -35,29 +44,33 @@ function App() {
 
   return (
     <div className="App" data-color-mode={theme}>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Header showModal={showModal} />
-            <div className="top">
-              <div className="leftPart">
-                <Presentation />
-                <Skills />
+      {isLoading ? 
+        <Loading />
+      : (
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Header showModal={showModal} />
+              <div className="top">
+                <div className="leftPart">
+                  <Presentation />
+                  <Skills />
+                </div>
+                <Timeline />
               </div>
-              <Timeline />
-            </div>
-            <Projects />
-            <Footer />
-            <ConnexionModal showModal={openModal} hideModal={hideModal} />
-          </Route>
-          <Route exact path="/admin">
-            <Admin />
-          </Route>
-          <Route path="*">
-            <Erreur404 />
-          </Route>
-        </Switch>
-      </Router>
+              <Projects />
+              <Footer />
+              <ConnexionModal showModal={openModal} hideModal={hideModal} />
+            </Route>
+            <Route exact path="/admin">
+              <Admin />
+            </Route>
+            <Route path="*">
+              <Erreur404 />
+            </Route>
+          </Switch>
+        </Router>
+      )}
     </div>
   );
 
