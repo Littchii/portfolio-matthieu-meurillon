@@ -14,4 +14,4 @@ Vous pouvez m'aider à détecter des bugs ou des problèmes rencontrés sur le s
 Le code est **entièrement** Open Source, vous pouvez le réutiliser comme bon vous semble. 
 <br/>Je n'ai pas vraiment réaliser une structure compliquée ni révolutionnaire, 
 j'ai simplement implémenté redux et react-redux qui me permettent de gérer l'état global de l'application notamment pour le thème et la connexion.
-<br/>Je sais que redux n'est généralement pas apprécié et évité mais je l'ai surtout utilisé pour apprendre et savoir m'en servir pour de futurs projets.
+<br/><br/>*Je sais que redux n'est généralement pas apprécié et évité mais je l'ai surtout utilisé pour apprendre et savoir m'en servir pour de futurs projets.*
