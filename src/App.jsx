@@ -24,11 +24,10 @@ function App() {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setLoading(false);
     }, 1000);
-    return () => clearTimeout(timer);
-  });
+  }, []);
 
   const showModal = () => {
       setOpenModal(true);
