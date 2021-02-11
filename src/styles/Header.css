@@ -6,7 +6,7 @@
     text-align: center;
     padding: 15px 0;
     margin: auto;
-    border-bottom: solid 2px var(--color-primary-border);
+    border-bottom: solid 1px var(--color-primary-border);
     margin-bottom: 40px;
 }
 
