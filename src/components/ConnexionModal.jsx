@@ -23,6 +23,7 @@ const ConnexionModal = ({ showModal, hideModal }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(userLogin(email, password, history));
+        setPassword('');
     }
 
     return (

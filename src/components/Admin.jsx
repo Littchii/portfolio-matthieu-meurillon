@@ -14,6 +14,12 @@ const Admin = () => {
     
     return (
         <div className="adminContainer">
+            <h1 className="titleAdmin">
+                Administration
+            </h1>
+            <h4 className="underTitle">
+                Modifier les textes
+            </h4>
         </div>
     )
 

@@ -1,3 +1,15 @@
 .adminContainer {
     height: 100vh;
+    text-align: center;
+}
+
+.titleAdmin{
+    color: var(--color-primary-text);
+    padding-top: 15px;
+}
+
+.underTitle{
+    margin-top: 5px;
+    color: var(--color-secondary-text);
+    font-style: italic;
 }
