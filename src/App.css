@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 [data-color-mode="light"] {
     --color-primary-background: #c1d1d6;
     --color-secondary-background: #d4dfe2;
@@ -28,7 +30,8 @@
 
 html, body {
     margin: 0;
-    font-family: Inter, sans-serif;
+    /* font-family: Inter, sans-serif; */
+    font-family: 'Ubuntu';
 }
 
 h1, h2, h3, h4, h5, h6 {
