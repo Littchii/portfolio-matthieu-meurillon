@@ -57,7 +57,7 @@
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid var(--color-secondary-text);
+    border: solid var(--color-secondary-text);
     border-width: 10px 0px 10px 10px;
     border-color: transparent transparent transparent var(--color-secondary-text);
 }
@@ -70,7 +70,7 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid var(--color-secondary-text);
+    border: solid var(--color-secondary-text);
     border-width: 10px 10px 10px 0px;
     border-color: transparent var(--color-secondary-text) transparent transparent;
 }
