@@ -1,3 +1,4 @@
 svg {
     fill: var(--color-secondary-text);
+    margin: 0 5px;
 }
