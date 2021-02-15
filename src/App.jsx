@@ -9,6 +9,7 @@ import Timeline from './components/Timeline';
 import Erreur404 from './components/Erreur404';
 import ConnexionModal from './components/ConnexionModal';
 import Admin from './components/Admin';
+import CV from './components/CV';
 import Loading from './components/Loading';
 import { useSelector } from 'react-redux';
 import {
@@ -58,6 +59,7 @@ function App() {
                 <Timeline />
               </div>
               <Projects />
+              <CV />
               <Footer />
               <ConnexionModal showModal={openModal} hideModal={hideModal} />
             </Route>

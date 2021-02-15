@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block {
-    background-color:var(--color-tertiary-background);
+    background-color: var(--color-tertiary-background);
     padding: 20px;
     border-radius: 10px;
     border: solid 1px var(--color-secondary-border);
