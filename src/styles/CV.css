@@ -4,15 +4,15 @@
 }
 
 .imageCV {
-    /* cursor: pointer; */
+    cursor: pointer;
     margin: 20px 0;
     width: 100%;
     border: solid 2px var(--color-primary-text);
 }
 
-/* .imageCV:hover {
+.imageCV:hover {
     opacity: 0.8;
-} */
+}
 
 .download {
     font-style: italic;
