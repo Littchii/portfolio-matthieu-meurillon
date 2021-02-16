@@ -18,7 +18,7 @@ const Header = ({ showModal }) => {
             : 
                 <button className="button" onClick={() => showModal()}>Connexion</button>
             }
-            <input className="switcher" type="checkbox" id="switcher" checked={theme === 'light' ? true : false} 
+            <input className="switcher" type="checkbox" id="switcher" checked={theme === 'light' ? false : true} 
             onChange={
                 () => {
                 if(theme === 'light') {
