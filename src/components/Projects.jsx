@@ -19,7 +19,7 @@ const Projects = () => {
                 <br />Il y a d'autres projets qui eux n'ont pas forcément aboutis mais qui m'ont énormement aidé dans ma progression 
                 et ma compréhension de choses spécifiques notamment en Javascript.
                 <br />Finalement, mon dernier projet concret est ce portfolio que j'ai fait complétement 
-                en <a href="https://fr.reactjs.org/" title="grafikart" className="link" target="_blank" rel="noreferrer">React</a> un framework Javascript
+                en <a href="https://fr.reactjs.org/" title="reactjs" className="link" target="_blank" rel="noreferrer">React</a> un framework Javascript
                 crée par Facebook.
                 <br /><br /><strong>Dernière chose :</strong> J'ai regardé des dizaines d'heures les tutoriels incroyables 
                 de <a href="https://grafikart.fr/" title="grafikart" className="link" target="_blank" rel="noreferrer">Grafikart</a>.
