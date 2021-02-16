@@ -6,7 +6,7 @@ const CV = () => {
         <div className="block cv">
             <h2 className="head">Mon CV</h2>
             <a href="/CV.png" target="_blank">
-                <img src={process.env.PUBLIC_URL + 'CV.png'} className="imageCV" />
+                <img src={process.env.PUBLIC_URL + 'CV.png'} className="imageCV" alt="mon cv" />
             </a>
             <a href={process.env.PUBLIC_URL + 'CV.png'} className="download" download>
                 Télécharger (PNG)
