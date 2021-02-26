@@ -32,6 +32,16 @@ const Timeline = () => {
                     <p className="desc">Aujourd'hui, je suis toujours en 2ème année d'IUT R&T et je continue d'apprendre tous les jours.</p>
                 </div>
             </div>
+            <div className="container left">
+                <div className="content">
+                    <h2 className="date">Aujourd'hui</h2>
+                    <h2 className="head">- Approfondissement du développement</h2>
+                    <p className="desc">
+                        J'améliore mon niveau en programmation tous les jours, je continue de maintenir et d'améliorer des projets aboutis. 
+                        Je deviens de plus en plus mature et réfléchi dans mon travail.
+                    </p>
+                </div>
+            </div>
         </div>
     )
 

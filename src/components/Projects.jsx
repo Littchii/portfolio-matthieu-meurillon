@@ -21,6 +21,9 @@ const Projects = () => {
                 <br />Finalement, mon dernier projet concret est ce portfolio que j'ai fait complétement 
                 en <a href="https://fr.reactjs.org/" title="reactjs" className="link" target="_blank" rel="noreferrer">React</a> un framework Javascript
                 crée par Facebook.
+                <br />Plus récemment, j'ai fortement progressé en <a href="https://www.java.com/fr/" title="java" className="link" target="_blank" rel="noreferrer">Java</a> grâce 
+                à divers petits projets réalisés pour l'IUT comme la création d'un mini Packet Tracer ou encore
+                l'apprentissage du logiciel Android Studio pour le développement d'applications Android.
                 <br /><br /><strong>Dernière chose :</strong> J'ai regardé des dizaines d'heures les tutoriels incroyables 
                 de <a href="https://grafikart.fr/" title="grafikart" className="link" target="_blank" rel="noreferrer">Grafikart</a>.
                 Il m'a permis de comprendre beaucoup de choses en plus des documentations de technologies ou langages que j'utilisais.

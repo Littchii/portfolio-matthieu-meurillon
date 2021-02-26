@@ -22,16 +22,21 @@
 }
 
 .js {
-    width: 50%; 
+    width: 60%; 
     background-color: #f7df1e;
 }
 
 .php {
-    width: 65%; 
+    width: 70%; 
     background-color: #8993be;
 }
 
+.java {
+    width: 50%; 
+    background-color: #f0594e;
+}
+
 .illu {
-    width: 70%; 
+    width: 75%; 
     background-color: orangered;
 }
