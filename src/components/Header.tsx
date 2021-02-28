@@ -2,10 +2,11 @@ import '../styles/Header.css';
 import { switchTheme } from '../redux/themeActions';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { RootState } from '..';
 
-const Header = ({ showModal }) => {
+const Header = ({showModal}: any) => {
 
-    const theme = useSelector(state => state.themeReducer.theme);
+    const theme = useSelector((state: RootState) => state.themeReducer.theme);
     const dispatch = useDispatch();
     const history = useHistory();
     const authToken = localStorage.getItem('auth');

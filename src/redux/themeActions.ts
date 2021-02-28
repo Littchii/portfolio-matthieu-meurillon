@@ -1,8 +1,8 @@
 export const SWITCH_THEME = "SWITCH_THEME";
 
-export const switchTheme = theme => {
+export const switchTheme = (theme: string) => {
 
-    return dispatch => {
+    return (dispatch: any) => {
         
         dispatch({ type: SWITCH_THEME, theme: theme })
         localStorage.setItem('theme', theme);

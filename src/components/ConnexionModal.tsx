@@ -3,24 +3,26 @@ import { userLogin } from '../redux/userActions';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { RootState } from '..';
+import { FormEvent } from 'react';
 
-const ConnexionModal = ({ showModal, hideModal }) => {
+const ConnexionModal = ({showModal, hideModal}: any) => {
 
     const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const message = useSelector(state => state.userReducer.message);
+    const message = useSelector((state: RootState) => state.userReducer.message);
     const dispatch = useDispatch();
 
-    const handleChangeEmail = (event) => {
+    const handleChangeEmail = (event: any) => {
         setEmail(event.target.value);
     }
 
-    const handleChangePassword = (event) => {
+    const handleChangePassword = (event: any) => {
         setPassword(event.target.value);
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
         dispatch(userLogin(email, password, history));
         setPassword('');

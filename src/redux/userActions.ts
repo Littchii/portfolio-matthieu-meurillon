@@ -1,9 +1,9 @@
 export const LOGIN = "LOGIN";
 export const ERROR = "ERROR";
 
-export const userLogin = (email, password, history) => {
+export const userLogin = (email: string, password: string, history: any) => {
 
-    return async dispatch => {
+    return async (dispatch: any) => {
         
         fetch('/api/users/login', {
             method: "POST",
