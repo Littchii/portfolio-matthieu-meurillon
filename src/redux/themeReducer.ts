@@ -1,4 +1,3 @@
-import { stringify } from 'querystring';
 import {SWITCH_THEME} from './themeActions';
 
 const initialState = {
