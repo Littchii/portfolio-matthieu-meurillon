@@ -6,7 +6,14 @@ const initialState = {
     message: null
 }
 
-const userReducer = (state = initialState, action: {type: string, user: Object, token: string, message: string}) => {
+type actionUser = {
+    type: string,
+    user: JSON,
+    token: string,
+    message: string
+}
+
+const userReducer = (state = initialState, action: actionUser) => {
     switch (action.type) {
         case LOGIN:
             return {
