@@ -3,6 +3,12 @@ import { Dispatch } from 'redux';
 export const LOGIN: string = "LOGIN";
 export const ERROR: string = "ERROR";
 
+interface res {
+    user: Object,
+    token: string,
+    error: string
+}
+
 export const userLogin = (email: string, password: string, history: any) => {
 
     return async (dispatch: Dispatch) => {
@@ -19,13 +25,13 @@ export const userLogin = (email: string, password: string, history: any) => {
             })
         })
         .then((res) => res.json())
-        .then((res) => {
-            if(! res.error) {
-                localStorage.setItem('auth', res.token);
-                dispatch({ type: LOGIN, user: res.user, token: res.token });
+        .then(({user, token, error}: res) => {
+            if(! error) {
+                localStorage.setItem('auth', token);
+                dispatch({ type: LOGIN, user: user, token: token });
                 history.push('/admin');
             } else {
-                dispatch({ type: ERROR, message: res.error });
+                dispatch({ type: ERROR, message: error });
             }
         })
         .catch((e) => console.log(e))
