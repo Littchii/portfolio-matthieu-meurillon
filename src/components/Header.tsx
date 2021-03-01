@@ -4,7 +4,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { RootState } from '..';
 
-const Header = ({showModal}: any) => {
+interface props {
+    showModal: () => void
+}
+
+const Header = ({showModal}: props) => {
 
     const theme = useSelector((state: RootState) => state.themeReducer.theme);
     const dispatch = useDispatch();

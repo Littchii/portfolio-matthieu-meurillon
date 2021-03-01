@@ -4,7 +4,7 @@ const initialState = {
     theme: localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'
 }
 
-const themeReducer = (state = initialState, action: any) => {
+const themeReducer = (state = initialState, action: {type: string, theme: string}) => {
     switch (action.type) {
         case SWITCH_THEME:
             return {

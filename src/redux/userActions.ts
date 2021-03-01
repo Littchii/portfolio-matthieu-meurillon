@@ -1,9 +1,11 @@
-export const LOGIN = "LOGIN";
-export const ERROR = "ERROR";
+import { Dispatch } from 'redux';
+
+export const LOGIN: string = "LOGIN";
+export const ERROR: string = "ERROR";
 
 export const userLogin = (email: string, password: string, history: any) => {
 
-    return async (dispatch: any) => {
+    return async (dispatch: Dispatch) => {
         
         fetch('/api/users/login', {
             method: "POST",
