@@ -4,7 +4,7 @@ export const LOGIN: string = "LOGIN";
 export const ERROR: string = "ERROR";
 
 interface res {
-    user: Object,
+    user: JSON,
     token: string,
     error: string
 }
