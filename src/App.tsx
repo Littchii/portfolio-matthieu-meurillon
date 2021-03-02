@@ -21,9 +21,12 @@ import { RootState } from '.';
 
 
 function App() {
-
+  
   const [openModal, setOpenModal] = useState(false);
   const [isLoading, setLoading] = useState(true);
+
+  const theme = useSelector((state: RootState) => state.themeReducer.theme);
+  document.documentElement.setAttribute("data-color-mode", theme);
 
   useEffect(() => {
     setTimeout(() => {
@@ -41,10 +44,9 @@ function App() {
     document.body.style.overflow = "visible";
   }
 
-  const theme = useSelector((state: RootState) => state.themeReducer.theme);
 
   return (
-    <div className="App" data-color-mode={theme}>
+    <div className="App">
       {isLoading ? 
         <Loading />
       : (
