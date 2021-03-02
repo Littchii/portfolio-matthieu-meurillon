@@ -23,11 +23,11 @@ const Skills = () => {
             </div>
             <p className="head">Java</p>
             <div className="bar">
-                <div className="java">40%</div>
+                <div className="java">35%</div>
             </div>
             <p className="head">Adobe Illustrator</p>
             <div className="bar">
-                <div className="illu">60%</div>
+                <div className="illu">55%</div>
             </div>
         </div>
     )
