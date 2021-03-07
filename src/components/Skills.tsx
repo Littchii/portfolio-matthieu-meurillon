@@ -3,7 +3,7 @@ import '../styles/Skills.css';
 const Skills = () => {
 
     return (
-        <div className="block">
+        <div className="block fade">
             <h2 className="head">Mes compétences...</h2>
             <p className="head">HTML5</p>
             <div className="bar">

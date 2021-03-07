@@ -1,7 +1,7 @@
 const Presentation = () => {
 
     return (
-        <div className="block">
+        <div className="block fade">
             <h2 className="head">Présentation...</h2>
             <p className="desc">
                 Je m'appelle Matthieu Meurillon, j'ai 20 ans. Je suis originaire du nord de la France.

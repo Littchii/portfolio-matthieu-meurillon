@@ -3,7 +3,7 @@ import '../styles/Projects.css';
 const Projects = () => {
 
     return (
-        <div className="block margin">
+        <div className="block margin fade">
             <h2 className="head">Mes projets...</h2>
             <p className="desc">
                 J'ai réalisé plusieurs projets en web notamment pour l'IUT comme un "mini-facebook". Le but était de recréer en PHP quelques

@@ -3,7 +3,7 @@ import '../styles/CV.css';
 const CV = () => {
 
     return (
-        <div className="block cv">
+        <div className="block cv fade">
             <h2 className="head">Mon CV</h2>
             <a href="/CV.png" target="_blank">
                 <img src={process.env.PUBLIC_URL + 'CV.png'} className="imageCV" alt="mon cv" />

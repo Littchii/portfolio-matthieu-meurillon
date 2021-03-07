@@ -3,7 +3,7 @@ import '../styles/Timeline.css';
 const Timeline = () => {
     
     return (
-        <div className="timeline">
+        <div className="timeline fade">
             <div className="container left">
                 <div className="content">
                     <h2 className="date">Juin 2019</h2>

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 [data-color-mode="light"] {
-    --color-primary-background: #c1d1d6;
-    --color-secondary-background: #d4dfe2;
+    --color-primary-background: #b9ccd1;
+    --color-secondary-background: #cee2e7;
     --color-tertiary-background: #fff9f1;
-    --color-forth-background: #acc0c7;
+    --color-forth-background: #87a5af;
     --colo-primary-shadow: rgb(136, 131, 130);
     --color-primary-text: #111;
     --color-secondary-text: #222;
@@ -66,6 +66,35 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     margin-bottom: 50px;
     box-shadow: 3px 3px var(--colo-primary-shadow);
+}
+
+.fade {
+    -webkit-animation-name: fadeInOpacity;
+	animation-name: fadeInOpacity;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .top {
