@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 [data-color-mode="light"] {
-    --color-primary-background: #b9ccd1;
+    --color-primary-background: #abc8cf;
     --color-secondary-background: #cee2e7;
     --color-tertiary-background: #fff9f1;
     --color-forth-background: #87a5af;
@@ -17,7 +17,7 @@
     --color-primary-background: #13163b;
     --color-secondary-background: #1e2155;
     --color-tertiary-background: #0c0f2e;
-    --color-forth-background: #252857;
+    --color-forth-background: #3c41a5;
     --colo-primary-shadow: #787cd1;
     --color-primary-text: #eee;
     --color-secondary-text: #ddd;
